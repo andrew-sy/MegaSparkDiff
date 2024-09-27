@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.finra.megasparkdiff</groupId>
-    <artifactId>mega-spark-diff</artifactId>
-    <version>0.3.0</version>
+    <artifactId>mega-spark-diff-asy</artifactId>
+    <version>0.3.2-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>MegaSparkDiff</name>
@@ -256,6 +256,11 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <args>
+                        <arg>-g:notailcalls</arg>
+                    </args>
+                </configuration>
             </plugin>
 
             <plugin>
